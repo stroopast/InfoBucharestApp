@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063948260837",
+    "project_id": "info-bucharest",
+    "storage_bucket": "info-bucharest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063948260837:android:21dc6d8d0b38e159300b0c",
+        "android_client_info": {
+          "package_name": "com.example.infobucharest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063948260837-dn9md0ofv9avupvaivfhoele5hhc6ko7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD012KyGZXLbOoFXTySx-tttJaaoflvDPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063948260837-dn9md0ofv9avupvaivfhoele5hhc6ko7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
