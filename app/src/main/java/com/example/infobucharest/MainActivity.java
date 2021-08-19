@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mLogin = findViewById(R.id.loginBtn);
         mRegister = findViewById(R.id.registerBtn);
         fAuth = FirebaseAuth.getInstance();
+        progressBar2 = findViewById(R.id.progressBar2);
 
         mLogin.setOnClickListener(view -> {
             String email = mEmail.getText().toString().trim();
