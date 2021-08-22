@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.Objects;
 
 public class Register extends AppCompatActivity {
-    EditText mFirstName, mLastName, mEmail, mPassword;
+    EditText mFirstName, mPhoneNumber, mEmail, mPassword;
     Button mRegisterButton;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
@@ -30,7 +30,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mFirstName = findViewById(R.id.firstName);
-        mLastName = findViewById(R.id.lastName);
+        mPhoneNumber = findViewById(R.id.phoneNumber);
         mEmail = findViewById(R.id.emailAddress);
         mPassword = findViewById(R.id.password);
         mRegisterButton = findViewById(R.id.registerButton);
@@ -42,14 +42,13 @@ public class Register extends AppCompatActivity {
             String email = mEmail.getText().toString().trim();
             String password = mPassword.getText().toString().trim();
             String firstName = mFirstName.getText().toString().trim();
-            String lastName = mLastName.getText().toString().trim();
+            String phonenumber = mPhoneNumber.getText().toString().trim();
 
-            if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password) && password.length() < 6 && TextUtils.isEmpty(firstName) && TextUtils.isEmpty(lastName)){
+            if(TextUtils.isEmpty(email) && TextUtils.isEmpty(password) && password.length() < 6 && TextUtils.isEmpty(firstName) && TextUtils.isEmpty(phonenumber)){
                 mEmail.setError("Email is Required!");
                 mPassword.setError("Password is Required!");
-                mPassword.setError("Password must have at least 6 characters");
                 mFirstName.setError("First Name is Required");
-                mLastName.setError("Last Name is Required");
+                mPhoneNumber.setError("Phone Number is Required");
                 return;
             } else if(TextUtils.isEmpty(email)){
                 mEmail.setError("Email is Required!");
@@ -63,8 +62,8 @@ public class Register extends AppCompatActivity {
             } else if(TextUtils.isEmpty(firstName)){
                 mFirstName.setError("First Name is Required");
                 return;
-            } else if(TextUtils.isEmpty(lastName)){
-                mLastName.setError("Last Name is Required");
+            } else if(TextUtils.isEmpty(phonenumber)){
+                mPhoneNumber.setError("Phone Number is Required!");
             }
 
             progressBar.setVisibility(View.VISIBLE);
