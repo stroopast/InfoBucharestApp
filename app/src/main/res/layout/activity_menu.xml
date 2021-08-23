@@ -8,6 +8,34 @@
     tools:context=".Menu" >
 
     <Button
+        android:id="@+id/button4"
+        android:layout_width="166dp"
+        android:layout_height="61dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/chalkdust"
+        android:text="@string/parks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="166dp"
+        android:layout_height="61dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/chalkdust"
+        android:text="@string/parks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="166dp"
         android:layout_height="61dp"
@@ -19,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <Button
         android:id="@+id/button2"
@@ -33,5 +61,19 @@
         app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24000001" />
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/logoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:fontFamily="@font/chalkdust"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
 </androidx.constraintlayout.widget.ConstraintLayout>

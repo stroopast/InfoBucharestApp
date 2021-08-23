@@ -12,4 +12,6 @@
     <string name="forgotPass">Forgot Password?</string>
     <string name="resetPass">Reset Your Password</string>
     <string name="verificationEmail">Send Verification Email</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
 </resources>

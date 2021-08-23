@@ -20,7 +20,7 @@ import java.util.Objects;
 
 public class Register extends AppCompatActivity {
     EditText mFirstName, mPhoneNumber, mEmail, mPassword;
-    Button mRegisterButton;
+    Button mRegisterButton, backButton;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
 
@@ -35,6 +35,9 @@ public class Register extends AppCompatActivity {
         mPassword = findViewById(R.id.password);
         mRegisterButton = findViewById(R.id.registerButton);
         progressBar = findViewById(R.id.progressBar);
+        backButton = findViewById(R.id.backBtnRegister);
+
+        backButton.setOnClickListener(view -> backBtn());
 
         fAuth = FirebaseAuth.getInstance();
 
@@ -78,5 +81,10 @@ public class Register extends AppCompatActivity {
             });
         });
 
+    }
+
+    public void backBtn(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

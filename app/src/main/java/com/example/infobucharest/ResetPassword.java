@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class ResetPassword extends AppCompatActivity {
 
     EditText resetEmail;
-    Button sendEmailBtn;
+    Button sendEmailBtn, backbtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
@@ -30,10 +30,13 @@ public class ResetPassword extends AppCompatActivity {
         resetEmail = findViewById(R.id.resetEmail);
         sendEmailBtn = findViewById(R.id.sendBtn);
         progressBar = findViewById(R.id.progressBar3);
+        backbtn = findViewById(R.id.backButton);
 
         fAuth = FirebaseAuth.getInstance();
 
         sendEmailBtn.setOnClickListener(view -> resetPassword());
+
+        backbtn.setOnClickListener(view -> resetBtn());
 
     }
 
@@ -68,4 +71,5 @@ public class ResetPassword extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
 }
