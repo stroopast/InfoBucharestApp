@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     Button mLogin, mRegister;
     FirebaseAuth fAuth;
     ProgressBar progressBar2;
+    TextView mForgotPass;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mRegister = findViewById(R.id.registerBtn);
         fAuth = FirebaseAuth.getInstance();
         progressBar2 = findViewById(R.id.progressBar2);
+        mForgotPass = findViewById(R.id.forgotPassword);
 
         mLogin.setOnClickListener(view -> {
             String email = mEmail.getText().toString().trim();
@@ -62,11 +66,17 @@ public class MainActivity extends AppCompatActivity {
                     progressBar2.setVisibility(View.INVISIBLE);
                 }
             });
+
         });
+
+
+        mForgotPass.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ResetPassword.class)));
     }
 
     public void registerButton(View view){
         Intent intent = new Intent(this, Register.class);
         startActivity(intent);
     }
+
+
 }
