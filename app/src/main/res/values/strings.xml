@@ -16,4 +16,10 @@
     <string name="logout">Logout</string>
     <string name="barspubs">Bars &amp; Pubs</string>
     <string name="maps">Maps</string>
+    <string name="arculDeTriumf">The Arch Of Triumph</string>
+    <string name="memorialulRenasterii">Memorial of Rebirth</string>
+    <string name="statuieCarol">Equestrian statue of Carol I</string>
+    <string name="km0">Kilometer Zero</string>
+    <string name="charlesSquare">Charles de Gaulle Square</string>
+    <string name="statuieIuliu">Iuliu Maniu Statue</string>
 </resources>

@@ -8,7 +8,7 @@
     tools:context=".Menu" >
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/mapsBtn"
         android:layout_width="166dp"
         android:layout_height="61dp"
         android:background="@drawable/button"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.74" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/barsBtn"
         android:layout_width="166dp"
         android:layout_height="61dp"
         android:background="@drawable/button"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.55" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/monumentsBtn"
         android:layout_width="166dp"
         android:layout_height="61dp"
         android:background="@drawable/button"
@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.18" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/parksBtn"
         android:layout_width="166dp"
         android:layout_height="61dp"
         android:background="@drawable/button"
