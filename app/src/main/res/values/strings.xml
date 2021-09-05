@@ -22,4 +22,5 @@
     <string name="km0">Kilometer Zero</string>
     <string name="charlesSquare">Charles de Gaulle Square</string>
     <string name="statuieIuliu">Iuliu Maniu Statue</string>
+    <string name="title_activity_arch_map">Map</string>
 </resources>
