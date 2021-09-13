@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
 
+
 public class Register extends AppCompatActivity {
     EditText mFirstName, mPhoneNumber, mEmail, mPassword;
     Button mRegisterButton, backButton;
@@ -69,6 +70,8 @@ public class Register extends AppCompatActivity {
                 mPhoneNumber.setError("Phone Number is Required!");
             }
 
+            AccountsModel accountsModel = new AccountsModel(firstName, Integer.parseInt(phonenumber), email, password);
+
             progressBar.setVisibility(View.VISIBLE);
 
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
@@ -79,6 +82,12 @@ public class Register extends AppCompatActivity {
                     Toast.makeText(Register.this, "Error! " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
+
+            DataBase dataBase = new DataBase(Register.this);
+
+            boolean succes = dataBase.addOne(accountsModel);
+            Toast.makeText(Register.this, "Succes= " + succes, Toast.LENGTH_SHORT).show();
+
         });
 
     }
